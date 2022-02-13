@@ -195,3 +195,11 @@ catch(ex)
 {
     console.error(ex);
 }
+
+/* UC4:- Ability to find existing contact person using their name and edit it */
+function SearchName(addressbook)
+{
+    if(addressbook.firstName=="Omprakash") return addressbook;
+}
+let searchResult =addressArr.find(SearchName);
+console.log("Result after searching:-  "+searchResult);
