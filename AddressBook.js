@@ -177,3 +177,21 @@ class AddressBookContact
         return "\nFirstName:"+this.firstName+" ,LastName:"+this.lastName+" ,Address:"+this.address+" ,City:"+this.city+" ,State:"+this.state+" Zip:"+this.zip+" ,Phone:"+this.phone+",Email:"+this.email;
     }
 }
+
+
+/* UC3:- Ability to create a New Address Book array and add new Contacts to it */
+
+let addressArr = new Array();
+try
+{
+    let address1 = new AddressBookContact("Omprakash","Khawshi","Karanja","Pune","Maharashtra",412105,8788616249,"om@gmail.com");
+    let address2= new AddressBookContact("Om","Khaw","Bajaj","Pune","Maharashtra",442203,1234567891,"ok@gmail.com");  
+    addressArr.push(address1); //push record array
+    addressArr.push(address2);
+   
+    console.log(addressArr); //print
+}
+catch(ex)
+{
+    console.error(ex);
+}
